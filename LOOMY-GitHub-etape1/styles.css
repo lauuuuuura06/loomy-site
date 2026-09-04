@@ -454,3 +454,21 @@ main,header,footer,.announcement{position:relative;z-index:2}
 @media(max-width:650px){
   .dog-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* Bases chats fournies individuellement */
+.cat-grid{
+  grid-template-columns:repeat(5,1fr);
+}
+.cat-grid .breed-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  object-position:center;
+  background:linear-gradient(145deg,#fde6ee,#fbd7e2);
+}
+@media(max-width:1050px){
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+}
