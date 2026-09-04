@@ -436,3 +436,21 @@ main,header,footer,.announcement{position:relative;z-index:2}
   .pet-models-single{min-height:350px;padding:72px 8px 16px}
   .pet-models-image{width:96%}
 }
+
+/* Modèles chiens fournis individuellement */
+.dog-grid{
+  grid-template-columns:repeat(5,1fr);
+}
+.dog-grid .breed-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  object-position:center;
+  background:linear-gradient(145deg,#fde6ee,#fbd7e2);
+}
+@media(max-width:1050px){
+  .dog-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+  .dog-grid{grid-template-columns:repeat(2,1fr)}
+}
