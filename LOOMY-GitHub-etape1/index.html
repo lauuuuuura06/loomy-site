@@ -11,9 +11,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="announcement">
-    ✨ Offre de lancement : figurine 25 € · porte-clé 30 € · livraison offerte dès 2 figurines
+
+  <div class="background-logos" aria-hidden="true">
+    <img class="bg-logo bg1" src="assets/logo-loomy.png" alt="">
+    <img class="bg-logo bg2" src="assets/logo-loomy-pets.png" alt="">
+    <img class="bg-logo bg3" src="assets/logo-loomy.png" alt="">
+    <img class="bg-logo bg4" src="assets/logo-loomy-pets.png" alt="">
+    <img class="bg-logo bg5" src="assets/logo-loomy.png" alt="">
+    <img class="bg-logo bg6" src="assets/logo-loomy-pets.png" alt="">
   </div>
+
+  <div class="announcement">✨ Offre de lancement · LOOMY dès 25 € · LOOMY Pets dès 20 € · livraison offerte dès 3 figurines</div>
 
   <header class="nav-wrap">
     <nav class="nav container">
@@ -28,6 +36,7 @@
         <a href="#concept">Le concept</a>
         <a href="#personnalisation">Personnalisation</a>
         <a href="#pets">LOOMY Pets</a>
+        <a href="#animaux">Chiens & chats</a>
         <a href="#tarifs">Tarifs</a>
         <a href="#faq">FAQ</a>
       </div>
@@ -79,8 +88,8 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Comment ça marche ?</span>
-          <h2>De ta photo à ton LOOMY ✨</h2>
-          <p>Quelques étapes toutes simples pour créer une figurine vraiment à ton image.</p>
+          <h2>De toi à ton LOOMY ✨</h2>
+          <p>Quelques étapes simples pour créer votre figurine de A à Z.</p>
         </div>
 
         <div class="steps">
@@ -94,7 +103,7 @@
             <div class="step-number">02</div>
             <div class="step-icon">🎨</div>
             <h3>On personnalise</h3>
-            <p>Cheveux, peau, yeux, tenue, tatouages, piercing, blush… tu choisis.</p>
+            <p>Cheveux, peau, yeux, voile, tatouages, piercing, blush… tu choisis.</p>
           </article>
           <article class="step reveal">
             <div class="step-number">03</div>
@@ -126,7 +135,8 @@
             <span>Cheveux</span>
             <span>Couleur de peau</span>
             <span>Yeux</span>
-            <span>Tenue</span>
+            <span>Cils</span>
+            <span>Voile</span>
             <span>Grain de beauté</span>
             <span>Blush</span>
             <span>Piercings</span>
@@ -150,18 +160,33 @@
     <section class="section pets" id="pets">
       <div class="container pet-grid">
         <div class="pet-visual reveal">
-          <div class="pet-card">
-          <img class="loomy-pets-img" src="assets/logo-loomy-pets.png" alt="LOOMY Pets — chien et chat">
+          <div class="pet-showcase">
+            <img class="pets-brand" src="assets/logo-loomy-pets.png" alt="Logo LOOMY Pets">
+            <div class="neutral-pets">
+              <div class="neutral-pet-card">
+                <img src="assets/dog-chihuahua.jpg" alt="Modèle chien LOOMY Pets neutre">
+                <span>Modèle chien</span>
+              </div>
+              <div class="neutral-pet-card">
+                <img src="assets/cat-europeen.jpg" alt="Modèle chat LOOMY Pets neutre">
+                <span>Modèle chat</span>
+              </div>
+            </div>
+            <div class="pet-float pet-float-1">🐾 À son image</div>
+            <div class="pet-float pet-float-2">Race & détails ♡</div>
+          </div>
         </div>
+
         <div class="pet-copy reveal">
           <span class="eyebrow">LOOMY Pets 🐾</span>
           <h2>Ton petit compagnon,<br>en version LOOMY.</h2>
           <p>
-            Parce qu’eux aussi méritent leur mini version. Transforme ton chien, ton chat
-            ou ton petit compagnon en figurine personnalisée à partir de tes photos.
+            Parce qu’eux aussi méritent leur mini version. Transforme ton chien ou ton chat
+            en figurine personnalisée à partir de ses photos.
           </p>
 
           <ul class="pet-list">
+            <li>Forme de tête adaptée à la race</li>
             <li>Couleur et motifs du pelage</li>
             <li>Couleur des yeux</li>
             <li>Forme des oreilles</li>
@@ -169,10 +194,66 @@
             <li>Collier et petits accessoires</li>
           </ul>
 
-          <a href="#commander" class="btn">Créer son LOOMY Pets 🐾</a>
+          <a href="#animaux" class="btn">Voir les modèles chiens & chats 🐾</a>
         </div>
       </div>
     </section>
+
+
+    <section class="section animal-models" id="animaux">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">LOOMY Pets</span>
+          <h2>Chiens & chats, chacun son modèle ♡</h2>
+          <p>Pas de grande planche : découvre les modèles séparément. La base est ensuite personnalisée selon les photos de ton animal.</p>
+        </div>
+
+        <div class="breed-block reveal">
+          <div class="breed-title">
+            <div><span>🐶</span><div><small>LOOMY DOGS</small><h3>Modèles chiens</h3></div></div>
+            <p>D’autres races peuvent être étudiées sur demande.</p>
+          </div>
+          <div class="breed-grid dog-grid">
+            <article class="breed-card reveal"><img src="assets/dog-chihuahua.jpg" alt="Chihuahua"><span>Chihuahua</span></article>
+<article class="breed-card reveal"><img src="assets/dog-bouledogue-francais.jpg" alt="Bouledogue français"><span>Bouledogue français</span></article>
+<article class="breed-card reveal"><img src="assets/dog-teckel.jpg" alt="Teckel"><span>Teckel</span></article>
+<article class="breed-card reveal"><img src="assets/dog-golden-retriever.jpg" alt="Golden Retriever"><span>Golden Retriever</span></article>
+<article class="breed-card reveal"><img src="assets/dog-labrador.jpg" alt="Labrador"><span>Labrador</span></article>
+<article class="breed-card reveal"><img src="assets/dog-berger-allemand.jpg" alt="Berger allemand"><span>Berger allemand</span></article>
+<article class="breed-card reveal"><img src="assets/dog-husky.jpg" alt="Husky"><span>Husky</span></article>
+<article class="breed-card reveal"><img src="assets/dog-caniche.jpg" alt="Caniche"><span>Caniche</span></article>
+          </div>
+        </div>
+
+        <div class="breed-block reveal">
+          <div class="breed-title">
+            <div><span>🐱</span><div><small>LOOMY CATS</small><h3>Modèles chats</h3></div></div>
+            <p>Couleurs, motifs et marques sont adaptés à ton chat.</p>
+          </div>
+          <div class="breed-grid cat-grid">
+            <article class="breed-card reveal"><img src="assets/cat-europeen.jpg" alt="Européen"><span>Européen</span></article>
+<article class="breed-card reveal"><img src="assets/cat-chartreux.jpg" alt="Chartreux"><span>Chartreux</span></article>
+<article class="breed-card reveal"><img src="assets/cat-siamois.jpg" alt="Siamois"><span>Siamois</span></article>
+<article class="breed-card reveal"><img src="assets/cat-persan.jpg" alt="Persan"><span>Persan</span></article>
+<article class="breed-card reveal"><img src="assets/cat-maine-coon.jpg" alt="Maine Coon"><span>Maine Coon</span></article>
+<article class="breed-card reveal"><img src="assets/cat-angora.jpg" alt="Angora"><span>Angora</span></article>
+<article class="breed-card reveal"><img src="assets/cat-bengal.jpg" alt="Bengal"><span>Bengal</span></article>
+<article class="breed-card reveal"><img src="assets/cat-calico.jpg" alt="Calico"><span>Calico</span></article>
+<article class="breed-card reveal"><img src="assets/cat-scottish-fold.jpg" alt="Scottish Fold"><span>Scottish Fold</span></article>
+<article class="breed-card reveal"><img src="assets/cat-sphynx.jpg" alt="Sphynx"><span>Sphynx</span></article>
+<article class="breed-card reveal"><img src="assets/cat-tuxedo.jpg" alt="Tuxedo"><span>Tuxedo</span></article>
+<article class="breed-card reveal"><img src="assets/cat-ragdoll.jpg" alt="Ragdoll"><span>Ragdoll</span></article>
+<article class="breed-card reveal"><img src="assets/cat-british-shorthair.jpg" alt="British Shorthair"><span>British Shorthair</span></article>
+<article class="breed-card reveal"><img src="assets/cat-manx.jpg" alt="Manx"><span>Manx</span></article>
+<article class="breed-card reveal"><img src="assets/cat-abyssin.jpg" alt="Abyssin"><span>Abyssin</span></article>
+<article class="breed-card reveal"><img src="assets/cat-norvegien.jpg" alt="Norvégien"><span>Norvégien</span></article>
+<article class="breed-card reveal"><img src="assets/cat-american-curl.jpg" alt="American Curl"><span>American Curl</span></article>
+<article class="breed-card reveal"><img src="assets/cat-bombay.jpg" alt="Bombay"><span>Bombay</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section" id="galerie">
       <div class="container">
@@ -195,33 +276,59 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow launch">✨ Offre de lancement ✨</span>
-          <h2>Ton LOOMY à prix tout doux.</h2>
-          <p>Des tarifs exclusifs pour célébrer le lancement de LOOMY.</p>
+          <h2>Des prix simples, des souvenirs uniques.</h2>
+          <p>Choisis ton LOOMY, ton LOOMY Pets ou profite de nos packages de lancement.</p>
         </div>
 
-        <div class="pricing-grid">
-          <article class="price-card reveal">
-            <span class="price-tag">OFFRE DE LANCEMENT</span>
-            <div class="price-icon">♡</div>
-            <h3>Figurine personnalisée</h3>
-            <div class="price">25<span>€</span></div>
-            <p>Ta figurine à ton image, créée et peinte avec soin.</p>
-            <a href="#commander" class="btn btn-full">Je veux ma figurine</a>
+        <div class="new-pricing-grid">
+          <article class="tariff-card main-tariff reveal">
+            <div class="tariff-head">
+              <div class="tariff-icon">♡</div>
+              <div><small>TON MINI TOI</small><h3>LOOMY</h3></div>
+            </div>
+            <div class="tariff-row"><span>Figurine</span><strong>25 €</strong></div>
+            <div class="tariff-row"><span>Version porte-clé</span><strong>30 €</strong></div>
+            <a href="#commander" class="btn btn-full">Créer mon LOOMY ✨</a>
           </article>
 
-          <article class="price-card featured reveal">
-            <span class="price-tag">OFFRE DE LANCEMENT</span>
-            <div class="price-icon">🔑</div>
-            <h3>Version porte-clé</h3>
-            <div class="price">30<span>€</span></div>
-            <p>Ton LOOMY en version porte-clé pour l’emporter partout avec toi.</p>
-            <a href="#commander" class="btn btn-full">Je veux mon porte-clé</a>
+          <article class="tariff-card pet-tariff reveal">
+            <div class="tariff-head">
+              <div class="tariff-icon">🐾</div>
+              <div><small>CHIEN OU CHAT</small><h3>LOOMY Pets</h3></div>
+            </div>
+            <div class="tariff-row"><span>Figurine</span><strong>20 €</strong></div>
+            <div class="tariff-row"><span>Version porte-clé</span><strong>25 €</strong></div>
+            <a href="#commander" class="btn btn-full">Créer mon LOOMY Pets</a>
+          </article>
+
+          <article class="tariff-card package-card reveal">
+            <div class="tariff-head">
+              <div class="tariff-icon">🎀</div>
+              <div><small>À DEUX, C'EST MIEUX</small><h3>Packages</h3></div>
+            </div>
+            <div class="package-line">
+              <span>Porte-clé LOOMY +<br>Porte-clé LOOMY Pets</span>
+              <strong>50 €</strong>
+            </div>
+            <div class="package-line">
+              <span>2 porte-clés LOOMY</span>
+              <strong>55 €</strong>
+            </div>
+          </article>
+
+          <article class="tariff-card delivery-card reveal">
+            <div class="tariff-head">
+              <div class="tariff-icon">📦</div>
+              <div><small>LIVRAISON</small><h3>Envoi de ta commande</h3></div>
+            </div>
+            <div class="delivery-price">5 €</div>
+            <p>de frais de livraison</p>
+            <div class="free-shipping">🎁 Livraison offerte dès <b>3 figurines</b></div>
           </article>
         </div>
-
-        <div class="shipping reveal">🎁 <b>Livraison offerte dès l’achat de 2 figurines.</b></div>
       </div>
     </section>
+
 
     <section class="section love">
       <div class="container love-box reveal">
@@ -244,19 +351,19 @@
         <div class="accordion">
           <details class="reveal">
             <summary>Comment commander mon LOOMY ?</summary>
-            <p>Contacte-nous directement via Instagram ou le bouton de commande en bas du site. Nous te demanderons plusieurs photos et les détails souhaités.</p>
+            <p>Contacte-moi via Instagram ou Discord. Je te demanderai les informations nécessaires et je t’enverrai le formulaire à compléter.</p>
           </details>
           <details class="reveal">
             <summary>Quels détails peut-on personnaliser ?</summary>
-            <p>Cheveux, couleur de peau, yeux, tenue, blush, grains de beauté, piercings, tatouages et plusieurs petits détails selon la faisabilité.</p>
+            <p>Cheveux, couleur de peau, yeux, blush, cils, grains de beauté et piercings.</p>
           </details>
           <details class="reveal">
             <summary>Peut-on faire un animal de compagnie ?</summary>
             <p>Oui ♡ Avec LOOMY Pets, nous pouvons reproduire les couleurs, motifs, oreilles, yeux et petites particularités de ton compagnon.</p>
           </details>
           <details class="reveal">
-            <summary>La livraison est-elle offerte ?</summary>
-            <p>Oui, la livraison est offerte à partir de 2 figurines.</p>
+            <summary>Combien coûte la livraison ?</summary>
+            <p>Les frais de livraison sont de 5 €. La livraison est offerte dès l’achat de 3 figurines.</p>
           </details>
         </div>
       </div>
@@ -289,6 +396,7 @@
       <div class="footer-links">
         <a href="#concept">Le concept</a>
         <a href="#pets">LOOMY Pets</a>
+        <a href="#animaux">Chiens & chats</a>
         <a href="#tarifs">Tarifs</a>
         <a href="#commander">Commander</a>
       </div>

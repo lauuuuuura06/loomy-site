@@ -1,16 +1,17 @@
-# LOOMY
+# LOOMY — mise à jour complète
 
-Site vitrine LOOMY — base V1.
+Modifications intégrées :
+- Concept : nouveau titre et sous-titre
+- Étape 2 : tenue remplacée par voile
+- Personnalisation : ajout cils, tenue remplacée par voile
+- LOOMY Pets : modèles chien/chat neutres + logo conservé
+- Nouvelle présentation séparée des modèles chiens et chats
+- Nouvelle grille de tarifs
+- Livraison : 5 €, offerte dès 3 figurines
+- Packages LOOMY
+- Logos LOOMY discrets éparpillés dans le fond
+- FAQ mise à jour
 
-## Modifications intégrées
-- Logo officiel LOOMY dans la navigation et le footer
-- Vraie tête LOOMY blanche à la place du personnage provisoire de l'accueil
-- Logo officiel LOOMY Pets à la place du faux animal provisoire
-
-Le design général de la V1 est conservé.
-
-## Fichiers
-- index.html
-- styles.css
-- script.js
-- assets/
+Déploiement :
+Remplacer le contenu du dossier GitHub utilisé comme Root Directory par le contenu de ce dossier.
+Vercel redéploiera automatiquement après le commit.
