@@ -930,3 +930,54 @@ section,
   .hero .hero-copy::before{ left:-335px !important; }
   .hero .hero-card::after{ right:-335px !important; }
 }
+
+
+/* ===== CARTE LIVRAISON — CORRECTION ===== */
+/* Le prix de livraison était trop pâle / visuellement perdu */
+.shipping-card,
+.delivery-card,
+.tariff-card:last-child{
+  position:relative !important;
+}
+
+.shipping-card .price,
+.shipping-card .shipping-price,
+.delivery-card .price,
+.delivery-card .shipping-price,
+.tariff-card:last-child .price,
+.tariff-card:last-child .shipping-price{
+  color:#c75f88 !important;
+  opacity:1 !important;
+  font-family:Georgia, "Times New Roman", serif !important;
+  font-size:34px !important;
+  font-weight:700 !important;
+  line-height:1.1 !important;
+}
+
+/* Texte secondaire de la carte */
+.shipping-card p,
+.delivery-card p,
+.tariff-card:last-child p{
+  opacity:1 !important;
+}
+
+/* Si le 5 € est dans un élément séparé qui avait été rendu invisible */
+.tariff-card:last-child strong,
+.tariff-card:last-child b,
+.tariff-card:last-child .amount,
+.tariff-card:last-child .tariff-price{
+  color:#c75f88 !important;
+  opacity:1 !important;
+}
+
+/* La mention "de frais de livraison" doit rester bien lisible */
+.tariff-card:last-child{
+  color:#34292d !important;
+}
+
+.tariff-card:last-child .muted,
+.tariff-card:last-child .subtitle,
+.tariff-card:last-child .description{
+  color:#8b747c !important;
+  opacity:1 !important;
+}
