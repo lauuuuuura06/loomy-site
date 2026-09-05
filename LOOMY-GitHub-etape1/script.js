@@ -1,22 +1,17 @@
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+# LOOMY — mise à jour complète
 
-menuBtn?.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-});
+Modifications intégrées :
+- Concept : nouveau titre et sous-titre
+- Étape 2 : tenue remplacée par voile
+- Personnalisation : ajout cils, tenue remplacée par voile
+- LOOMY Pets : modèles chien/chat neutres + logo conservé
+- Nouvelle présentation séparée des modèles chiens et chats
+- Nouvelle grille de tarifs
+- Livraison : 5 €, offerte dès 3 figurines
+- Packages LOOMY
+- Logos LOOMY discrets éparpillés dans le fond
+- FAQ mise à jour
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => navLinks.classList.remove("open"));
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+Déploiement :
+Remplacer le contenu du dossier GitHub utilisé comme Root Directory par le contenu de ce dossier.
+Vercel redéploiera automatiquement après le commit.
