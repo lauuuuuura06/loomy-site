@@ -898,3 +898,35 @@ section,
     display:none !important;
   }
 }
+
+
+/* ===== RUBANS : ENCORE PLUS ÉCARTÉS ===== */
+.hero .container::before{
+  left:-285px !important;
+  top:105px !important;
+  width:330px !important;
+  height:420px !important;
+}
+
+.hero .container::after{
+  right:-280px !important;
+  top:120px !important;
+  width:330px !important;
+  height:410px !important;
+}
+
+.hero .hero-copy::before{
+  left:-300px !important;
+}
+
+.hero .hero-card::after{
+  right:-300px !important;
+}
+
+/* Sur grands écrans, ils restent vraiment collés aux extrémités */
+@media(min-width:1500px){
+  .hero .container::before{ left:-330px !important; }
+  .hero .container::after{ right:-325px !important; }
+  .hero .hero-copy::before{ left:-335px !important; }
+  .hero .hero-card::after{ right:-335px !important; }
+}
