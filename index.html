@@ -11,17 +11,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <div class="background-logos" aria-hidden="true">
-    <img class="bg-logo bg1" src="assets/logo-loomy.png" alt="">
-    <img class="bg-logo bg2" src="assets/logo-loomy-pets.png" alt="">
-    <img class="bg-logo bg3" src="assets/logo-loomy.png" alt="">
-    <img class="bg-logo bg4" src="assets/logo-loomy-pets.png" alt="">
-    <img class="bg-logo bg5" src="assets/logo-loomy.png" alt="">
-    <img class="bg-logo bg6" src="assets/logo-loomy-pets.png" alt="">
-  </div>
-
-  <div class="announcement">✨ Offre de lancement · LOOMY dès 25 € · LOOMY Pets dès 20 € · livraison offerte dès 3 figurines</div>
+  <div class="site-kawaii-background" aria-hidden="true"></div>
+<div class="announcement">✨ Offre de lancement · LOOMY dès 25 € · LOOMY Pets dès 20 € · livraison offerte dès 3 figurines</div>
 
   <header class="nav-wrap">
     <nav class="nav container">
@@ -54,6 +45,7 @@
         <div class="hero-copy reveal">
           <span class="eyebrow">♡ Créé rien que pour toi</span>
           <h1>Ton mini toi<br>version <span class="hero-loomy-accent">LOOMY</span> 🤍</h1>
+        
           <p class="hero-text">
             Une figurine personnalisée à ton image, fabriquée avec soin à partir de tes photos.
             Choisis tes détails, ton style et transforme-toi en petite figurine unique.
@@ -264,63 +256,69 @@
           </div>
           <div class="breed-grid cat-grid">
             <article class="breed-card reveal">
-              <img src="assets/cat-europeen-new.png" alt="Base chat British Shorthair">
-              <span>British Shorthair</span>
+              <img src="assets/chat-01-europeen.png" alt="Base chat Européen">
+              <span>Européen</span>
             </article>
             <article class="breed-card reveal">
-              <img src="assets/cat-siamois-new.png" alt="Base chat Chat européen">
-              <span>Chat européen</span>
-            </article>
-            <article class="breed-card reveal">
-              <img src="assets/cat-abyssin-new.png" alt="Base chat Siamois">
+              <img src="assets/chat-02-siamois.png" alt="Base chat Siamois">
               <span>Siamois</span>
             </article>
             <article class="breed-card reveal">
-              <img src="assets/cat-bombay.png" alt="Base chat Bombay">
-              <span>Bombay</span>
+              <img src="assets/chat-03-british-shorthair.png" alt="Base chat British Shorthair">
+              <span>British Shorthair</span>
             </article>
             <article class="breed-card reveal">
-              <img src="assets/cat-maine-coon-new.png" alt="Base chat Maine Coon">
-              <span>Maine Coon</span>
+              <img src="assets/chat-04-bengal.png" alt="Base chat Bengal">
+              <span>Bengal</span>
             </article>
             <article class="breed-card reveal">
-              <img src="assets/cat-norvegien-new.png" alt="Base chat Norvégien">
-              <span>Norvégien</span>
-            </article>
-            <article class="breed-card reveal">
-              <img src="assets/cat-sphynx-new.png" alt="Base chat Sphynx">
-              <span>Sphynx</span>
-            </article>
-            <article class="breed-card reveal">
-              <img src="assets/cat-scottish-fold-new.png" alt="Base chat Scottish Fold">
+              <img src="assets/chat-05-scottish-fold.png" alt="Base chat Scottish Fold">
               <span>Scottish Fold</span>
             </article>
             <article class="breed-card reveal">
-              <img src="assets/cat-bengal-new.png" alt="Base chat Bengal">
-              <span>Bengal</span>
+              <img src="assets/chat-06-sphynx.png" alt="Base chat Sphynx">
+              <span>Sphynx</span>
+            </article>
+            <article class="breed-card reveal">
+              <img src="assets/chat-07-norvegien.png" alt="Base chat Norvégien">
+              <span>Norvégien</span>
+            </article>
+            <article class="breed-card reveal">
+              <img src="assets/chat-08-maine-coon.png" alt="Base chat Maine Coon">
+              <span>Maine Coon</span>
+            </article>
+            <article class="breed-card reveal">
+              <img src="assets/chat-09-persan.png" alt="Base chat Persan">
+              <span>Persan</span>
+            </article>
+            <article class="breed-card reveal">
+              <img src="assets/chat-10-bombay.png" alt="Base chat Bombay">
+              <span>Bombay</span>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-
     <section class="section" id="galerie">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Des créations uniques</span>
           <h2>Ils ont leur LOOMY ♡</h2>
-          <p>Remplace ces emplacements par tes vraies photos pour montrer ton travail.</p>
+          <p class="loomy-gallery-note">Ce n’est que le début ✨ D’autres photos viendront bientôt.</p>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-card reveal"><div class="photo-placeholder">Ta création 01</div></div>
-          <div class="gallery-card tall reveal"><div class="photo-placeholder">Ta création 02</div></div>
-          <div class="gallery-card reveal"><div class="photo-placeholder">LOOMY Pets</div></div>
-          <div class="gallery-card reveal"><div class="photo-placeholder">Ta création 03</div></div>
+        <div class="loomy-real-gallery">
+          <figure class="loomy-real-photo reveal">
+            <img src="assets/loomy-client-01.png" alt="LOOMY personnalisés réalisés">
+          </figure>
+          <figure class="loomy-real-photo reveal">
+            <img src="assets/loomy-client-02.png" alt="LOOMY Pets réalisé">
+          </figure>
         </div>
       </div>
     </section>
+
 
     <section class="section pricing" id="tarifs">
       <div class="container">
@@ -416,7 +414,12 @@
             <p>Les frais de livraison sont de 5 €. La livraison est offerte dès l’achat de 3 figurines.</p>
           </details>
         </div>
-      </div>
+      
+        <details class="faq-item reveal">
+          <summary>Quels sont les moyens de paiement disponibles ?</summary>
+          <p>Les paiements sont possibles par PayPal, virement bancaire ou Revolut.</p>
+        </details>
+    </div>
     </section>
 
     <section class="section order" id="commander">

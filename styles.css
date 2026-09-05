@@ -455,7 +455,7 @@ main,header,footer,.announcement{position:relative;z-index:2}
   .dog-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* Bases chats fournies individuellement */
+/* Grille chats finale — 10 images fournies individuellement */
 .cat-grid{
   grid-template-columns:repeat(5,1fr);
 }
@@ -471,4 +471,93 @@ main,header,footer,.announcement{position:relative;z-index:2}
 }
 @media(max-width:650px){
   .cat-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Photos réelles — Ils ont leur LOOMY */
+.loomy-real-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  margin-top:28px;
+}
+.loomy-real-photo{
+  margin:0;
+  overflow:hidden;
+  border-radius:28px;
+  background:#fff;
+  border:1px solid rgba(190,105,145,.18);
+  box-shadow:0 18px 45px rgba(83,49,62,.08);
+}
+.loomy-real-photo img{
+  display:block;
+  width:100%;
+  height:520px;
+  object-fit:cover;
+}
+.loomy-gallery-note{
+  margin:10px 0 0;
+  color:#8d7c82;
+  font-size:15px;
+}
+@media(max-width:700px){
+  .loomy-real-gallery{grid-template-columns:1fr;gap:18px}
+  .loomy-real-photo img{height:auto;aspect-ratio:4/5}
+}
+
+
+/* ==========================================
+   Arrière-plan LOOMY — pastel kawaii
+   ========================================== */
+
+html, body{
+  background:#fffafb;
+}
+
+body{
+  position:relative;
+  isolation:isolate;
+}
+
+.site-kawaii-background{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+
+  background-image:url("assets/loomy-background-kawaii.png");
+  background-repeat:repeat-y;
+  background-position:center top;
+  background-size:100% auto;
+
+  opacity:.72;
+}
+
+/* Petit voile blanc pour garder tous les textes très lisibles */
+.site-kawaii-background::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,250,252,.22);
+}
+
+/* Les grandes zones restent légèrement transparentes :
+   le motif se voit, mais ne gêne jamais la lecture. */
+.section,
+.hero,
+main{
+  position:relative;
+}
+
+@media(max-width:850px){
+  .site-kawaii-background{
+    background-size:auto 720px;
+    background-position:center top;
+    opacity:.54;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .site-kawaii-background{
+    background-attachment:scroll;
+  }
 }
