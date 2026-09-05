@@ -503,3 +503,29 @@ main,header,footer,.announcement{position:relative;z-index:2}
   .loomy-real-gallery{grid-template-columns:1fr;gap:18px}
   .loomy-real-photo img{height:auto;aspect-ratio:4/5}
 }
+
+/* ===== FOND LOOMY VISIBLE ===== */
+html {
+  background: #fff7fa;
+}
+body {
+  background-color: transparent !important;
+  background-image: url("assets/fond-loomy.png") !important;
+  background-repeat: repeat-y !important;
+  background-position: center top !important;
+  background-size: 100% auto !important;
+  background-attachment: scroll !important;
+}
+main,
+section {
+  background-color: rgba(255, 250, 252, 0.72) !important;
+}
+@media (max-width: 800px) {
+  body {
+    background-size: auto 700px !important;
+  }
+  main,
+  section {
+    background-color: rgba(255, 250, 252, 0.80) !important;
+  }
+}
