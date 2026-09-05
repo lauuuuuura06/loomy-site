@@ -603,3 +603,62 @@ section::after{
     background-position:center top !important;
   }
 }
+
+
+/* ===== FOND LOOMY GRAVÉ — VERSION TRÈS DISCRÈTE ===== */
+html{
+  background:#ffffff !important;
+}
+
+body{
+  background-color:#ffffff !important;
+  background-image:
+    linear-gradient(rgba(255,255,255,.72), rgba(255,255,255,.72)),
+    url("assets/fond-loomy.png") !important;
+  background-repeat:repeat-y !important;
+  background-position:center top !important;
+  background-size:100% auto !important;
+  background-blend-mode:normal !important;
+}
+
+/* Les sections laissent légèrement apparaître la gravure */
+main,
+section,
+.hero,
+.concept,
+.personalization,
+.pets,
+.animal-models,
+.pricing,
+.faq,
+.gallery,
+#concept,
+#personnalisation,
+#pets,
+#animaux,
+#tarifs,
+#faq,
+#galerie{
+  background-color:rgba(255,255,255,.12) !important;
+  background-image:none !important;
+}
+
+/* Les cartes restent bien lisibles au-dessus */
+.step,
+.step-card,
+.detail-card,
+.breed-block,
+.breed-card,
+.tariff-card,
+.faq-item,
+.pet-showcase,
+.loomy-real-photo,
+.hero-card{
+  background-color:rgba(255,255,255,.94) !important;
+}
+
+@media(max-width:900px){
+  body{
+    background-size:auto 760px !important;
+  }
+}
