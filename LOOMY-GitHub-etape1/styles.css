@@ -662,3 +662,102 @@ section,
     background-size:auto 760px !important;
   }
 }
+
+
+/* ===== HERO : remplace les gros ronds colorés par des rubans + coeurs ===== */
+
+/* Cache les anciens halos/ronds décoratifs du hero */
+.hero-blur,
+.hero::before,
+.hero::after{
+  display:none !important;
+}
+
+/* On garde le hero comme repère */
+.hero{
+  position:relative !important;
+  overflow:hidden !important;
+}
+
+/* Décoration ruban à gauche */
+.hero .container::before{
+  content:"";
+  position:absolute;
+  left:-115px;
+  top:115px;
+  width:280px;
+  height:430px;
+  pointer-events:none;
+  opacity:.62;
+  background:
+    radial-gradient(circle at 70% 32%, transparent 0 38px, rgba(216,151,170,.42) 39px 42px, transparent 43px),
+    radial-gradient(circle at 74% 34%, transparent 0 23px, rgba(194,155,205,.28) 24px 27px, transparent 28px);
+  border:3px solid rgba(226,169,184,.38);
+  border-color:rgba(226,169,184,.38) transparent transparent rgba(226,169,184,.38);
+  border-radius:55% 35% 60% 40%;
+  transform:rotate(-18deg);
+  filter:blur(.1px);
+}
+
+/* Décoration ruban à droite */
+.hero .container::after{
+  content:"";
+  position:absolute;
+  right:-120px;
+  top:135px;
+  width:285px;
+  height:400px;
+  pointer-events:none;
+  opacity:.6;
+  background:
+    radial-gradient(circle at 28% 32%, transparent 0 40px, rgba(199,157,209,.34) 41px 44px, transparent 45px),
+    radial-gradient(circle at 34% 35%, transparent 0 24px, rgba(230,169,185,.3) 25px 28px, transparent 29px);
+  border:3px solid rgba(218,158,181,.34);
+  border-color:rgba(218,158,181,.34) rgba(218,158,181,.34) transparent transparent;
+  border-radius:42% 58% 36% 64%;
+  transform:rotate(17deg);
+}
+
+/* Petites étincelles très légères sur les côtés */
+.hero .hero-copy::before,
+.hero .hero-card::after{
+  content:"✦  ♡  ✧";
+  position:absolute;
+  color:rgba(203,119,151,.45);
+  letter-spacing:16px;
+  font-size:22px;
+  pointer-events:none;
+}
+
+.hero .hero-copy{
+  position:relative;
+  z-index:2;
+}
+
+.hero .hero-copy::before{
+  left:-150px;
+  top:42%;
+  transform:rotate(-12deg);
+}
+
+.hero .hero-card{
+  position:relative;
+  z-index:2;
+}
+
+.hero .hero-card::after{
+  right:-145px;
+  top:44%;
+  transform:rotate(10deg);
+}
+
+/* Mobile : décor plus discret pour ne rien gêner */
+@media (max-width: 900px){
+  .hero .container::before,
+  .hero .container::after,
+  .hero .hero-copy::before,
+  .hero .hero-card::after{
+    opacity:.22 !important;
+    transform:scale(.7) !important;
+  }
+}
