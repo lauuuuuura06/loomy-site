@@ -981,3 +981,60 @@ section,
   color:#8b747c !important;
   opacity:1 !important;
 }
+
+
+/* ===== LIVRAISON — DESIGN FINAL ===== */
+.delivery-card{
+  display:flex !important;
+  flex-direction:column !important;
+  min-height:100% !important;
+}
+
+.delivery-card .tariff-head{
+  padding-bottom:20px !important;
+  border-bottom:1px solid rgba(126,91,104,.18) !important;
+}
+
+.delivery-card .delivery-main{
+  padding:28px 0 30px !important;
+}
+
+.delivery-card .delivery-price{
+  margin:0 !important;
+  color:#c75f88 !important;
+  opacity:1 !important;
+  font-family:"Playfair Display", Georgia, serif !important;
+  font-size:48px !important;
+  line-height:1 !important;
+  font-weight:700 !important;
+}
+
+.delivery-card .delivery-label{
+  margin:7px 0 0 !important;
+  color:#8b747c !important;
+  opacity:1 !important;
+  font-size:18px !important;
+  line-height:1.35 !important;
+}
+
+.delivery-card .free-shipping{
+  margin-top:auto !important;
+  padding-top:22px !important;
+  border-top:1px solid rgba(126,91,104,.18) !important;
+  color:#2f2529 !important;
+  font-size:15px !important;
+}
+
+.delivery-card .free-shipping b{
+  color:#c75f88 !important;
+  font-weight:700 !important;
+}
+
+@media(max-width:700px){
+  .delivery-card .delivery-price{
+    font-size:42px !important;
+  }
+  .delivery-card .delivery-label{
+    font-size:16px !important;
+  }
+}
