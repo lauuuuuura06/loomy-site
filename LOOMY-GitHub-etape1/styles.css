@@ -761,3 +761,84 @@ section,
     transform:scale(.7) !important;
   }
 }
+
+
+/* ===== RUBANS LATÉRAUX — VERSION BIEN VISIBLE ===== */
+.hero{
+  overflow:hidden !important;
+}
+
+/* On remplace la tentative précédente par de vrais traits décoratifs visibles */
+.hero .container::before{
+  display:block !important;
+  content:"♡";
+  position:absolute !important;
+  left:-78px !important;
+  top:150px !important;
+  width:245px !important;
+  height:330px !important;
+  box-sizing:border-box !important;
+  background:none !important;
+  border:4px solid rgba(218,145,169,.55) !important;
+  border-right-color:transparent !important;
+  border-bottom-color:transparent !important;
+  border-radius:52% 48% 55% 45% !important;
+  color:rgba(202,139,194,.68) !important;
+  font-family:Georgia,serif !important;
+  font-size:82px !important;
+  line-height:260px !important;
+  text-align:right !important;
+  padding-right:12px !important;
+  opacity:1 !important;
+  transform:rotate(-24deg) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+.hero .container::after{
+  display:block !important;
+  content:"♡";
+  position:absolute !important;
+  right:-70px !important;
+  top:165px !important;
+  width:235px !important;
+  height:315px !important;
+  box-sizing:border-box !important;
+  background:none !important;
+  border:4px solid rgba(205,151,202,.55) !important;
+  border-left-color:transparent !important;
+  border-bottom-color:transparent !important;
+  border-radius:48% 52% 45% 55% !important;
+  color:rgba(218,145,169,.68) !important;
+  font-family:Georgia,serif !important;
+  font-size:82px !important;
+  line-height:245px !important;
+  text-align:left !important;
+  padding-left:10px !important;
+  opacity:1 !important;
+  transform:rotate(24deg) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* Les petites étoiles/cœurs autour sont également renforcés */
+.hero .hero-copy::before,
+.hero .hero-card::after{
+  display:block !important;
+  opacity:1 !important;
+  color:rgba(204,117,151,.65) !important;
+  font-size:24px !important;
+  letter-spacing:18px !important;
+  z-index:3 !important;
+}
+
+.hero .container{
+  position:relative !important;
+}
+
+@media(max-width:900px){
+  .hero .container::before,
+  .hero .container::after{
+    opacity:.35 !important;
+  }
+}
