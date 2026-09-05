@@ -455,7 +455,7 @@ main,header,footer,.announcement{position:relative;z-index:2}
   .dog-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* Bases chats fournies individuellement */
+/* Grille chats finale — 10 images fournies individuellement */
 .cat-grid{
   grid-template-columns:repeat(5,1fr);
 }
