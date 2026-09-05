@@ -1,0 +1,474 @@
+:root{
+  --bg:#fffafc;
+  --paper:#ffffff;
+  --pink:#f1bfd1;
+  --pink-2:#f9dce7;
+  --pink-3:#fff0f5;
+  --rose:#b76684;
+  --ink:#2c2327;
+  --muted:#786b70;
+  --line:#eadde2;
+  --shadow:0 22px 70px rgba(93,54,69,.10);
+  --radius:28px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"DM Sans",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.narrow{width:min(820px,calc(100% - 40px))}
+.section{padding:100px 0}
+.soft{background:linear-gradient(180deg,#fff6f9 0%,#fffafd 100%)}
+
+.announcement{
+  text-align:center;
+  padding:9px 18px;
+  background:var(--ink);
+  color:#fff;
+  font-size:13px;
+  letter-spacing:.2px;
+}
+.nav-wrap{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(18px);
+  background:rgba(255,250,252,.83);
+  border-bottom:1px solid rgba(234,221,226,.75);
+}
+.nav{height:78px;display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px;font-size:20px}
+.logo-mark{
+  display:grid;place-items:center;width:34px;height:34px;border-radius:50%;
+  background:var(--pink-2);font-family:"Playfair Display",serif;color:var(--rose)
+}
+.nav-links{display:flex;gap:25px;margin-left:auto;font-size:14px;font-weight:600}
+.nav-links a{transition:.2s}
+.nav-links a:hover{color:var(--rose)}
+.menu-btn{display:none;border:0;background:none;font-size:24px;cursor:pointer}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid var(--ink);background:var(--ink);color:#fff;
+  padding:14px 21px;border-radius:999px;font-weight:700;font-size:14px;
+  transition:.25s ease;box-shadow:0 7px 20px rgba(44,35,39,.08)
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(44,35,39,.14)}
+.btn-small{padding:10px 17px}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-full{width:100%}
+
+.hero{
+  position:relative;overflow:hidden;
+  min-height:760px;display:flex;align-items:center;
+  padding:90px 0 105px;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:70px}
+.eyebrow{
+  display:inline-flex;padding:7px 12px;border-radius:999px;background:var(--pink-3);
+  color:var(--rose);font-size:13px;font-weight:800;letter-spacing:.5px;text-transform:uppercase
+}
+h1,h2{font-family:"Playfair Display",serif;line-height:1.05;margin:18px 0}
+h1{font-size:clamp(54px,7vw,88px);letter-spacing:-2.2px}
+h1 em{font-style:italic;color:var(--rose);font-weight:600}
+h2{font-size:clamp(39px,5vw,61px);letter-spacing:-1.5px}
+h3{font-size:20px;margin:10px 0}
+.hero-text,.section-head p,.split-copy p,.pet-copy p,.love-box p,.order-box p{
+  color:var(--muted);font-size:17px;max-width:620px
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+.hero-points{display:flex;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:13px;font-weight:600}
+.hero-blur{position:absolute;border-radius:50%;filter:blur(6px);opacity:.65}
+.blur-1{width:380px;height:380px;background:#f7cfdd;right:-110px;top:80px}
+.blur-2{width:260px;height:260px;background:#fbe9c8;left:-110px;bottom:40px}
+
+.hero-card{
+  position:relative;height:540px;border-radius:46% 46% 30% 30% / 38% 38% 28% 28%;
+  background:linear-gradient(145deg,#f9dbe6,#fff);
+  border:1px solid #f2d8e1;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center
+}
+.figure-placeholder{position:relative;width:250px;height:360px}
+.figure-head{
+  width:235px;height:225px;border-radius:46% 46% 42% 42%;
+  background:#f0c4a3;position:absolute;left:8px;top:0;box-shadow:inset 0 -8px 0 rgba(0,0,0,.03)
+}
+.eye{width:21px;height:28px;border-radius:50%;background:#2b2527;position:absolute;top:93px}
+.e1{left:63px}.e2{right:63px}
+.eye:after{content:"";width:6px;height:6px;background:#fff;border-radius:50%;position:absolute;left:5px;top:4px}
+.nose{width:22px;height:12px;background:#dea987;border-radius:50%;position:absolute;left:106px;top:137px}
+.figure-body{
+  width:180px;height:160px;background:#ecd0d9;border-radius:70px 70px 32px 32px;
+  position:absolute;left:35px;bottom:0
+}
+.floating-label{position:absolute;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.label-1{left:-28px;top:100px}.label-2{right:-30px;top:200px}.label-3{left:20px;bottom:30px}
+.sparkle{position:absolute;color:var(--rose);font-size:30px}.s1{left:55px;top:50px}.s2{right:55px;bottom:55px}
+
+.section-head{text-align:center;max-width:720px;margin:0 auto 50px}
+.section-head p{margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px;min-height:260px;position:relative
+}
+.step-number{position:absolute;right:24px;top:20px;color:#d7c6cd;font-weight:800}
+.step-icon{font-size:34px;margin-bottom:27px}
+.step p{color:var(--muted);font-size:14px}
+
+.split{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 13px;font-size:13px;font-weight:700}
+.detail-card{background:#fff;border:1px solid var(--line);border-radius:34px;padding:28px;box-shadow:var(--shadow)}
+.detail-badge{font-size:12px;letter-spacing:1.5px;font-weight:800;color:var(--rose);margin-bottom:20px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini-card{background:var(--pink-3);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:5px}
+.mini-card span{font-size:26px}.mini-card small{color:var(--muted)}
+
+.pets{background:#fff}
+.pet-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.pet-card{
+  height:470px;border-radius:38px;background:linear-gradient(145deg,#fde8ef,#fff4db);
+  display:grid;place-items:center;position:relative;box-shadow:var(--shadow);overflow:hidden
+}
+.paw{position:absolute;right:35px;top:30px;font-size:42px;transform:rotate(15deg)}
+.pet-face{position:relative;width:230px;height:205px;background:#d2ad8a;border-radius:46% 46% 42% 42%}
+.pet-ear{position:absolute;width:80px;height:100px;background:#c49b76;top:-42px;border-radius:60% 60% 35% 35%}
+.pet-ear.left{left:4px;transform:rotate(-24deg)}.pet-ear.right{right:4px;transform:rotate(24deg)}
+.pet-eye{position:absolute;width:20px;height:25px;border-radius:50%;background:#2e2929;top:85px}
+.p1{left:63px}.p2{right:63px}.pet-nose{position:absolute;width:31px;height:22px;border-radius:50%;background:#4a3735;left:99px;top:125px}
+.pet-list{list-style:none;padding:0;margin:26px 0}
+.pet-list li{margin:10px 0;padding-left:28px;position:relative;color:var(--muted)}
+.pet-list li:before{content:"♡";position:absolute;left:0;color:var(--rose);font-weight:800}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:start}
+.gallery-card{border-radius:25px;overflow:hidden;height:330px;background:#f4e7eb}
+.gallery-card.tall{height:410px}
+.photo-placeholder{height:100%;display:grid;place-items:center;color:#aa8f99;font-weight:700;background:linear-gradient(145deg,#f9e3eb,#fbf4ef)}
+
+.pricing{background:linear-gradient(180deg,#fffafd 0%,#fff3f7 100%)}
+.launch{background:#2c2327;color:white}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:860px;margin:0 auto}
+.price-card{
+  background:#fff;border:1px solid var(--line);border-radius:32px;padding:34px;text-align:center;position:relative
+}
+.price-card.featured{transform:translateY(-8px);box-shadow:var(--shadow)}
+.price-tag{font-size:11px;font-weight:800;letter-spacing:1px;background:var(--pink-2);padding:7px 10px;border-radius:999px}
+.price-icon{font-size:32px;margin:28px 0 5px}
+.price{font-family:"Playfair Display",serif;font-size:68px;line-height:1;margin:19px 0}
+.price span{font-size:28px;margin-left:3px}
+.price-card p{color:var(--muted);min-height:55px}
+.shipping{text-align:center;margin-top:28px;font-size:16px}
+
+.love{padding-top:40px}
+.love-box{
+  background:var(--ink);color:#fff;border-radius:35px;padding:52px 56px;
+  display:flex;align-items:center;justify-content:space-between;gap:30px
+}
+.love-box .eyebrow{background:rgba(255,255,255,.1);color:#ffd9e6}
+.love-box p{color:#d7cbd0}.love-box .btn{background:#fff;color:var(--ink);border-color:#fff}
+
+.accordion{display:grid;gap:12px}
+details{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 20px}
+summary{cursor:pointer;padding:18px 0;font-weight:800;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";float:right;font-size:22px;color:var(--rose)}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);margin:0 0 20px}
+
+.order{padding-top:60px}
+.order-box{
+  background:linear-gradient(135deg,#f8dbe6,#fff1e6);
+  border:1px solid #efdce3;border-radius:40px;padding:70px;text-align:center
+}
+.order-box p{margin:0 auto 26px}.order-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.order-box small{display:block;margin-top:20px;color:#8b747d}
+
+footer{padding:50px 0;background:#fff;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:40px;align-items:center}
+.footer-logo{width:max-content}
+.footer-grid p{color:var(--muted);font-size:13px}
+.footer-links{display:flex;gap:18px;font-size:13px;font-weight:700}
+.footer-copy{text-align:right;color:var(--muted);font-size:12px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.delay{transition-delay:.12s}
+
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;left:20px;right:20px;top:78px;background:#fff;border:1px solid var(--line);padding:18px;border-radius:20px;box-shadow:var(--shadow);flex-direction:column}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block;margin-left:auto}
+  .nav>.btn-small{display:none}
+  .hero{min-height:auto;padding-top:70px}
+  .hero-grid,.split,.pet-grid{grid-template-columns:1fr;gap:45px}
+  .hero-copy{text-align:center}.hero-text{margin-left:auto;margin-right:auto}.hero-actions,.hero-points{justify-content:center}
+  .hero-visual{max-width:560px;width:100%;margin:auto}
+  .steps{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .pricing-grid{grid-template-columns:1fr;max-width:520px}
+  .price-card.featured{transform:none}
+  .footer-grid{grid-template-columns:1fr;text-align:center}
+  .footer-logo{margin:auto}.footer-links{justify-content:center;flex-wrap:wrap}.footer-copy{text-align:center}
+}
+
+@media(max-width:600px){
+  .container{width:min(100% - 26px,1160px)}
+  .section{padding:72px 0}
+  h1{font-size:48px}h2{font-size:39px}
+  .hero-card{height:430px;border-radius:36px}
+  .figure-placeholder{transform:scale(.82)}
+  .floating-label{font-size:11px}.label-1{left:4px}.label-2{right:5px}
+  .steps,.mini-grid,.gallery-grid{grid-template-columns:1fr}
+  .gallery-card,.gallery-card.tall{height:320px}
+  .love-box{padding:38px 28px;flex-direction:column;align-items:flex-start}
+  .order-box{padding:48px 24px}
+  .announcement{font-size:11px}
+}
+
+
+/* ================================
+   LOOMY — mise à jour septembre
+   ================================ */
+
+body{position:relative;overflow-x:hidden}
+main,header,footer,.announcement{position:relative;z-index:2}
+
+.logo-img{
+  width:38px;height:38px;border-radius:50%;object-fit:cover;flex:none;
+}
+
+.loomy-base-img{
+  position:relative;z-index:2;width:88%;max-width:455px;height:auto;object-fit:contain;mix-blend-mode:multiply;
+}
+
+/* Logos discrets éparpillés dans le fond */
+.background-logos{
+  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+}
+.bg-logo{
+  position:absolute;border-radius:50%;object-fit:cover;opacity:.035;filter:saturate(.75);
+}
+.bg1{width:120px;left:2%;top:18%;transform:rotate(-12deg)}
+.bg2{width:145px;right:2%;top:30%;transform:rotate(13deg)}
+.bg3{width:95px;left:8%;top:58%;transform:rotate(18deg)}
+.bg4{width:125px;right:7%;top:68%;transform:rotate(-15deg)}
+.bg5{width:80px;left:43%;top:38%;transform:rotate(8deg)}
+.bg6{width:105px;left:51%;top:82%;transform:rotate(-8deg)}
+
+/* LOOMY Pets */
+.pet-showcase{
+  min-height:500px;border-radius:38px;background:linear-gradient(145deg,#fde8ef,#fff4e2);
+  border:1px solid var(--line);box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden;
+}
+.pets-brand{
+  width:115px;height:115px;border-radius:50%;object-fit:cover;position:absolute;left:24px;top:22px;
+  box-shadow:0 10px 30px rgba(107,63,79,.10);z-index:3;
+}
+.neutral-pets{
+  height:100%;min-height:440px;display:flex;align-items:center;justify-content:center;gap:18px;padding-top:50px;
+}
+.neutral-pet-card{
+  width:44%;background:rgba(255,255,255,.82);border:1px solid rgba(234,221,226,.95);
+  border-radius:28px;padding:16px 14px 14px;text-align:center;box-shadow:0 14px 35px rgba(93,54,69,.08);
+  transform:rotate(-2deg);
+}
+.neutral-pet-card:nth-child(2){transform:rotate(2deg) translateY(24px)}
+.neutral-pet-card img{
+  width:100%;aspect-ratio:1.12/1;object-fit:cover;object-position:center top;border-radius:21px;
+}
+.neutral-pet-card span{display:block;margin-top:10px;font-size:12px;font-weight:800;color:var(--rose)}
+.pet-float{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;
+  font-size:11px;font-weight:800;box-shadow:0 9px 24px rgba(0,0,0,.06);z-index:4;
+}
+.pet-float-1{right:20px;top:38px}
+.pet-float-2{left:22px;bottom:25px}
+
+/* Modèles chiens & chats disposés séparément */
+.animal-models{background:linear-gradient(180deg,#fff7fa 0%,#fff 100%)}
+.breed-block{
+  background:#fff;border:1px solid var(--line);border-radius:34px;padding:28px;margin:0 0 26px;
+  box-shadow:0 15px 50px rgba(93,54,69,.07);
+}
+.breed-title{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:24px}
+.breed-title>div{display:flex;align-items:center;gap:13px}
+.breed-title>div>span{font-size:34px}
+.breed-title small{font-size:11px;font-weight:800;letter-spacing:1.3px;color:var(--rose)}
+.breed-title h3{font-family:"Playfair Display",serif;font-size:30px;margin:2px 0}
+.breed-title p{color:var(--muted);font-size:13px;margin:0;max-width:360px;text-align:right}
+.breed-grid{display:grid;gap:13px}
+.dog-grid{grid-template-columns:repeat(4,1fr)}
+.cat-grid{grid-template-columns:repeat(6,1fr)}
+.breed-card{
+  background:var(--pink-3);border:1px solid #f0dce4;border-radius:23px;padding:10px;text-align:center;overflow:hidden;
+  transition:.25s ease;
+}
+.breed-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(93,54,69,.10)}
+.breed-card img{
+  width:100%;aspect-ratio:1.16/1;object-fit:cover;object-position:center top;border-radius:17px;
+}
+.breed-card span{display:block;padding:8px 3px 3px;font-size:12px;font-weight:800;color:#765e67}
+
+/* Nouvelle grille tarifs */
+.pricing{background:linear-gradient(180deg,#fffafd 0%,#fff0f5 100%)}
+.new-pricing-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:980px;margin:0 auto;
+}
+.tariff-card{
+  background:#fff;border:1px solid var(--line);border-radius:32px;padding:30px;box-shadow:0 15px 45px rgba(93,54,69,.07);
+  position:relative;overflow:hidden;
+}
+.tariff-card:before{
+  content:"";position:absolute;width:160px;height:160px;border-radius:50%;right:-70px;top:-80px;background:var(--pink-3);
+}
+.main-tariff{border-color:#efcbd8}
+.pet-tariff{background:linear-gradient(145deg,#fff,#fff7ea)}
+.package-card{background:linear-gradient(145deg,#fff,#fff8fb)}
+.delivery-card{background:var(--ink);color:#fff}
+.delivery-card:before{background:rgba(255,255,255,.06)}
+.tariff-head{display:flex;align-items:center;gap:13px;margin-bottom:24px;position:relative;z-index:2}
+.tariff-icon{
+  width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:var(--pink-3);font-size:23px;
+}
+.delivery-card .tariff-icon{background:rgba(255,255,255,.1)}
+.tariff-head small{font-size:10px;font-weight:800;letter-spacing:1.2px;color:var(--rose)}
+.delivery-card .tariff-head small{color:#ffcfe0}
+.tariff-head h3{font-family:"Playfair Display",serif;font-size:28px;margin:1px 0}
+.tariff-row,.package-line{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:17px 2px;
+}
+.tariff-row span,.package-line span{color:var(--muted);font-size:14px}
+.tariff-row strong,.package-line strong{font-family:"Playfair Display",serif;font-size:28px;white-space:nowrap}
+.package-line strong{color:var(--rose)}
+.tariff-card .btn{margin-top:15px}
+.delivery-price{font-family:"Playfair Display",serif;font-size:76px;line-height:1;margin-top:22px}
+.delivery-card>p{color:#d9ccd1;margin:3px 0 22px}
+.free-shipping{
+  background:#fff;color:var(--ink);border-radius:18px;padding:14px 16px;font-size:13px;
+}
+
+/* FAQ cohérente avec les nouveaux tarifs */
+.launch{background:var(--ink);color:#fff}
+
+@media(max-width:900px){
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .dog-grid{grid-template-columns:repeat(2,1fr)}
+  .new-pricing-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .bg-logo{opacity:.025}
+  .pet-showcase{min-height:420px}
+  .pets-brand{width:90px;height:90px}
+  .neutral-pets{min-height:360px;gap:10px}
+  .neutral-pet-card{width:48%;padding:10px}
+  .breed-title{align-items:flex-start;flex-direction:column}
+  .breed-title p{text-align:left}
+  .cat-grid,.dog-grid{grid-template-columns:repeat(2,1fr)}
+  .new-pricing-grid{grid-template-columns:1fr}
+  .tariff-card{padding:24px}
+}
+
+
+/* Commander — Instagram + Discord */
+.social-actions{gap:18px;margin-top:8px}
+.social-btn{
+  min-width:300px;display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:16px 24px;border:0;color:#fff;box-shadow:0 12px 28px rgba(59,39,48,.10);
+}
+.social-btn:hover{transform:translateY(-2px)}
+.instagram-btn{background:linear-gradient(135deg,#e96d9b,#d95787)}
+.discord-btn{background:linear-gradient(135deg,#7b76f2,#5d9df2)}
+.social-icon{width:23px;height:23px;display:inline-grid;place-items:center;flex:0 0 23px}
+.social-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9}
+.discord-icon svg{fill:currentColor;stroke:none}
+.social-arrow{font-size:20px;line-height:1;margin-left:3px}
+.order-benefits{
+  display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:0;
+  margin:28px auto 0;color:#927c85;font-size:13px;
+}
+.order-benefits span{display:flex;align-items:center;gap:8px;padding:0 28px;border-right:1px solid #ead6df}
+.order-benefits span:last-child{border-right:0}
+.order-benefits b{color:#dc6d98;font-size:22px;font-weight:500;line-height:1}
+@media(max-width:700px){
+  .social-btn{min-width:100%;width:100%}
+  .order-benefits{gap:14px}
+  .order-benefits span{width:100%;justify-content:center;border-right:0;padding:0}
+}
+
+/* Processus LOOMY — 5 étapes */
+.steps-grid{
+  grid-template-columns:repeat(5,1fr);
+}
+@media(max-width:1100px){
+  .steps-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:700px){
+  .steps-grid{grid-template-columns:1fr}
+}
+
+/* Accent rose-violet du mot LOOMY dans le titre principal */
+.hero-loomy-accent{
+  color:#bd6b91;
+  font-style:italic;
+}
+
+/* LOOMY Pets — image fournie, logo conservé */
+.pet-models-single{
+  min-height:440px;
+  padding:78px 18px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.pet-models-image{
+  width:94%;
+  max-width:430px;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+@media(max-width:650px){
+  .pet-models-single{min-height:350px;padding:72px 8px 16px}
+  .pet-models-image{width:96%}
+}
+
+/* Modèles chiens fournis individuellement */
+.dog-grid{
+  grid-template-columns:repeat(5,1fr);
+}
+.dog-grid .breed-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  object-position:center;
+  background:linear-gradient(145deg,#fde6ee,#fbd7e2);
+}
+@media(max-width:1050px){
+  .dog-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+  .dog-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Bases chats fournies individuellement */
+.cat-grid{
+  grid-template-columns:repeat(5,1fr);
+}
+.cat-grid .breed-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  object-position:center;
+  background:linear-gradient(145deg,#fde6ee,#fbd7e2);
+}
+@media(max-width:1050px){
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+}
